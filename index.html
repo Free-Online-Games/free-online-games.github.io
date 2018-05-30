@@ -64,6 +64,11 @@
 		<div id="swf_game"></div>
 		
 		<br/>
+		<div id="alert_text" style="color:#A5A5A5; display:none;">
+			* Please enable Adobe Flash Player to play Flash games. 
+		</div>
+		
+		<br/>
 
 		<script>
 			var game = location.search.substring(1);
@@ -94,6 +99,7 @@
 				  '  <param name="quality" value="high">'+
 				  '  <param name="wmode" value="direct">'+
 					'</object>');
+				setTimeout(function(){$("#alert_text").show(2000)}, 3000);
 			}
 		</script>
 
